@@ -23,7 +23,7 @@ function addTodo(){
     );
 
     let currentHeight = parseInt(window.getComputedStyle(con).height); // Get current height as a number
-    con.style.height = (currentHeight + 50) + "px"; // Add 50px to the current height
+    con.style.height = (currentHeight + 25) + "px"; // Add 50px to the current height
 
     clickInputName.value = ``;
     clickInputDate.value = ``;
@@ -63,5 +63,5 @@ function showTodo(){
 function dec(){
     const con = document.getElementById("container");
     let currentHeight = parseInt(window.getComputedStyle(con).height); // Get current height as a number
-    con.style.height = (currentHeight - 50) + "px";
+    con.style.height = (currentHeight - 25) + "px";
 }
